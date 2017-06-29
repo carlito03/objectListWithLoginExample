@@ -1,0 +1,19 @@
+﻿@using logInexample.Models;
+@using logInexample.helpers;
+
+@{
+    ViewBag.Title = "Index";
+
+    List<Student> studentlist = ViewBag.studentlist;
+} 
+
+<h2>Students</h2>
+
+<div>
+
+    @foreach(Student s in studentlist)
+    {
+
+        <div>@s.StudentFirstName @s.StudentLastName </div>
+    }
+</div>
